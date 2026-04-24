@@ -1,0 +1,57 @@
+<?php
+require_once 'includes/header.php';
+?>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center mb-5">
+        <h1 class="display-4 fw-bold">🚀 EstruturAI</h1>
+        <p class="lead text-muted">Gestão Inteligente de Currículos e Talentos</p>
+    </div>
+
+    <div class="col-md-5">
+        <div class="card shadow-sm">
+            <div class="card-body p-4">
+                <h3 class="card-title mb-4">Acessar Painel</h3>
+                
+                <form action="processa_login.php" method="POST">
+                    <div class="mb-3">
+                        <label class="form-label">Usuário (Login)</label>
+                        <input type="text" name="user" class="form-control" placeholder="ex: joao.silva" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Senha</label>
+                        <input type="password" name="pass" class="form-control" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" name="login_btn" class="btn btn-primary btn-lg">Entrar</button>
+                    </div>
+                </form>
+                
+                <hr class="my-4">
+                
+                <div class="text-center">
+                    <p class="mb-1">Ainda não tem cadastro?</p>
+                    <a href="cadastro.php" class="btn btn-outline-success">Cadastrar Novo Currículo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <div class="card bg-dark text-white h-100">
+            <div class="card-body d-flex flex-column justify-content-center p-4">
+                <h4>Transparência e LGPD</h4>
+                <p>Seus dados são armazenados com criptografia e só ficam visíveis para recrutadores após a validação administrativa.</p>
+                <ul class="list-unstyled">
+                    <li>✅ Armazenamento Seguro</li>
+                    <li>✅ Exportação em PDF</li>
+                    <li>✅ Controle de Privacidade</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+require_once 'includes/footer.php';
+?>
